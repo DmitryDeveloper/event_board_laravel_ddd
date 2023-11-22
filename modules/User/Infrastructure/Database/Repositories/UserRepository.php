@@ -3,10 +3,10 @@
 namespace Modules\User\Infrastructure\Database\Repositories;
 
 use Modules\User\Domain\Entities\User;
-use Modules\User\Domain\Repositories\EventRepositoryInterface;
+use Modules\User\Domain\Repositories\UserRepositoryInterface;
 use Modules\User\Infrastructure\Database\Models\User as UserModel;
 
-class EventRepository implements EventRepositoryInterface
+class UserRepository implements UserRepositoryInterface
 {
     protected UserModel $model;
 

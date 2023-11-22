@@ -3,8 +3,8 @@
 namespace Modules\Event\Application\Providers;
 
 use Illuminate\Support\ServiceProvider;
-use Modules\User\Domain\Repositories\EventRepositoryInterface;
-use Modules\User\Infrastructure\Database\Repositories\EventRepository;
+use Modules\Event\Domain\Repositories\EventRepositoryInterface;
+use Modules\Event\Infrastructure\Database\Repositories\EventRepository;
 
 class EventServiceProvider extends ServiceProvider
 {

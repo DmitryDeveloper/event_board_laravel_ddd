@@ -22,7 +22,7 @@ class UserModuleServiceProvider extends AbstractModuleServiceProvider
     {
         return [
             // put module providers here
-            EventServiceProvider::class
+            UserServiceProvider::class
         ];
     }
 }
