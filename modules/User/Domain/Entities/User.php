@@ -1,6 +1,6 @@
 <?php
 
-namespace Modules\User\Domain\Aggregates;
+namespace Modules\User\Domain\Entities;
 
 class User
 {

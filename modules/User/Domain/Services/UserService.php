@@ -4,12 +4,12 @@ namespace Modules\User\Domain\Services;
 
 use Illuminate\Support\Facades\Hash;
 use Modules\User\Application\DTOs\RegistrationData;
+use Modules\User\Domain\Entities\User;
 use Modules\User\Domain\Repositories\UserRepositoryInterface;
-use Modules\User\Domain\Aggregates\User;
 
-class UserService
+readonly class UserService
 {
-    public function __construct(private readonly UserRepositoryInterface $userRepository)
+    public function __construct(private UserRepositoryInterface $userRepository)
     {
     }
 
@@ -27,5 +27,10 @@ class UserService
             'email' => $user->getEmail(),
             'password' => $data['password'] ?? null
         ]);
+    }
+
+    public function getProfile(string $userId): User
+    {
+        return $this->userRepository->find($userId);
     }
 }

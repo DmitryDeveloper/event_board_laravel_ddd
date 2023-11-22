@@ -1,6 +1,7 @@
 <?php
 
 use Modules\User\Application\Http\Controllers\AuthController;
+use Modules\User\Application\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -20,5 +21,6 @@ Route::post('/api/login', [AuthController::class, 'login']);
 Route::middleware(['api', 'auth'])->group(function () {
     Route::post('logout', [AuthController::class, 'logout']);
     Route::post('refresh', [AuthController::class, 'refresh']);
-    Route::get('me', [AuthController::class, 'me']);
+
+    Route::get('profile', [UserController::class, 'profile']);
 });
