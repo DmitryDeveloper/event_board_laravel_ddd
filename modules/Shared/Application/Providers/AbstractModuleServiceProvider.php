@@ -30,7 +30,7 @@ abstract class AbstractModuleServiceProvider extends RouteServiceProvider
     public function boot(): void
     {
         $this->loadMigrationsFrom(
-            base_path(trim($this->getModulePath()) . '/Database/Migrations')
+            base_path(trim($this->getModulePath()) . '/Infrastructure/Database/Migrations')
         );
 
         $this->loadRouteConfigFiles();

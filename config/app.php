@@ -173,6 +173,7 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         \Modules\Shared\Application\Providers\EventServiceProvider::class,
         \Modules\Shared\Application\Providers\RouteServiceProvider::class,
+        \Modules\Shared\Application\Providers\SharedModuleServiceProvider::class
     ])->toArray(),
 
     /*
