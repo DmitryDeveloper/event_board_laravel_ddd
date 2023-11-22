@@ -2,20 +2,20 @@
 
 declare(strict_types=1);
 
-namespace Modules\User\Application\Providers;
+namespace Modules\Event\Application\Providers;
 
 use Modules\Shared\Application\Providers\AbstractModuleServiceProvider;
 
-class UserModuleServiceProvider extends AbstractModuleServiceProvider
+class EventModuleServiceProvider extends AbstractModuleServiceProvider
 {
     protected function getModuleNamespace(): string
     {
-        return '\Modules\User';
+        return '\Modules\Event';
     }
 
     protected function getModulePath(): string
     {
-        return 'modules/User';
+        return 'modules/Event';
     }
 
     protected function getProvidersStack(): array

@@ -1,12 +1,12 @@
 <?php
 
-namespace Modules\User\Application\Providers;
+namespace Modules\Event\Application\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use Modules\User\Domain\Repositories\EventRepositoryInterface;
 use Modules\User\Infrastructure\Database\Repositories\EventRepository;
 
-class UserServiceProvider extends ServiceProvider
+class EventServiceProvider extends ServiceProvider
 {
     public function register(): void
     {

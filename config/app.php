@@ -163,7 +163,7 @@ return [
         /*
         * Module Service Providers...
         */
-        \Modules\User\Application\Providers\UserModuleServiceProvider::class,
+        \Modules\User\Application\Providers\EventModuleServiceProvider::class,
 
         /*
          * Application Service Providers...

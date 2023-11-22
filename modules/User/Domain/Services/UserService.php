@@ -5,11 +5,11 @@ namespace Modules\User\Domain\Services;
 use Illuminate\Support\Facades\Hash;
 use Modules\User\Application\DTOs\RegistrationData;
 use Modules\User\Domain\Entities\User;
-use Modules\User\Domain\Repositories\UserRepositoryInterface;
+use Modules\User\Domain\Repositories\EventRepositoryInterface;
 
 readonly class UserService
 {
-    public function __construct(private UserRepositoryInterface $userRepository)
+    public function __construct(private EventRepositoryInterface $userRepository)
     {
     }
 
